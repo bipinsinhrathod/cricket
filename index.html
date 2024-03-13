@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bat Ball Stump Game </h1>
+
+    <button onclick="
+
+    let randomNumber = Math.random() * 3 ;
+    let computerChoice ;
+
+    if (randomNumber > 0 && randomNumber <= 1){
+        computerChoice = 'Bat';
+    }else if (randomNumber <= 2 && randomNumber > 1){
+        computerChoice = 'Ball';
+    }else {
+        computerChoice = 'Stump';
+    }
+    
+
+    let resultMsg;
+    if(computerChoice === 'Ball'){
+        resultMsg ='You win the game';
+    }else if (computerChoice === 'Bat'){
+        resultMsg = 'Game is tai';
+    }else {
+        resultMsg = 'Opps , You Lose the game';
+    }
+
+    alert(`You have chosen Bat. Computer Choice is ${computerChoice} and ${resultMsg} `);
+
+    ">Bat</button>
+
+
+    <button onclick="
+
+    let randomNumber2 = Math.random() * 3 ;
+    let computerChoice2 ;
+
+    if (randomNumber2 > 0 && randomNumber2 <= 1){
+        computerChoice2 = 'Bat';
+    }else if (randomNumber2 <= 2 && randomNumber2 > 1){
+        computerChoice2 = 'Ball';
+    }else {
+        computerChoice2 = 'Stump';
+    }
+    
+
+    let resultMsg2;
+    if(computerChoice2 === 'Ball'){
+        resultMsg2 ='Game is tai';
+    }else if (computerChoice2 === 'Bat'){
+        resultMsg2 = 'Opps , You Lose the game';
+    }else {
+        resultMsg2 = 'You Won the game';
+    }
+
+    alert(`You have chosen Ball. Computer Choice is ${computerChoice2} and ${resultMsg2} `);
+
+    ">Ball</button>
+
+
+    <button onclick="
+
+    let randomNumber3 = Math.random() * 3 ;
+    let computerChoice3 ;
+
+    if (randomNumber3 > 0 && randomNumber3 <= 1){
+        computerChoice3 = 'Bat';
+    }else if (randomNumber3 <= 2 && randomNumber3 > 1){
+        computerChoice3 = 'Ball';
+    }else {
+        computerChoice3 = 'Stump';
+    }
+    
+
+    let resultMsg3;
+    if(computerChoice3 === 'Ball'){
+        resultMsg3 ='Opps , You Lose the game';
+    }else if (computerChoice3 === 'Bat'){
+        resultMsg3 = 'You Won the game';
+    }else {
+        resultMsg3 = 'Game is tai';
+    }
+
+    alert(`You have chosen Stump. Computer Choice is ${computerChoice3} and ${resultMsg3} `);
+
+    ">Stump</button>
+</body>
+</html>
