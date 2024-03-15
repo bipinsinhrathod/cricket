@@ -9,49 +9,35 @@
 <body>
     <h1>Bat Ball Stump Game </h1>
 
-    <button onclick=" generateComputerChoice()
+    <button onclick=" 
+    
+    let computerChoice = generateComputerChoice();
 
+    let resultMsg = getResult('Bat',computerChoice);
 
-    let resultMsg;
-    if(computerChoice === 'Ball'){
-        resultMsg ='You win the game';
-    }else if (computerChoice === 'Bat'){
-        resultMsg = 'Game is tai';
-    }else {
-        resultMsg = 'Opps , You Lose the game';
-    }
+    showResult('Bat',computerChoice , resultMsg)
 
-    alert(`You have chosen Bat. Computer Choice is ${computerChoice} and ${resultMsg} `);
 
     ">Bat</button>
 
 
-    <button onclick=" generateComputerChoice()
+    <button onclick=" 
+    computerChoice = generateComputerChoice();
     
-    if(computerChoice === 'Ball'){
-        resultMsg ='Game is tai';
-    }else if (computerChoice === 'Bat'){
-        resultMsg = 'Opps , You Lose the game';
-    }else {
-        resultMsg = 'You Won the game';
-    }
+    resultMsg = getResult('Ball',computerChoice)
 
-    alert(`You have chosen Ball. Computer Choice is ${computerChoice} and ${resultMsg} `);
+    showResult('Ball',computerChoice , resultMsg)
+
 
     ">Ball</button>
 
 
-    <button onclick=" generateComputerChoice()
+    <button onclick="
+    computerChoice = generateComputerChoice();
 
-    if(computerChoice === 'Ball'){
-        resultMsg ='Opps , You Lose the game';
-    }else if (computerChoice === 'Bat'){
-        resultMsg = 'You Won the game';
-    }else {
-        resultMsg = 'Game is tai';
-    }
+    resultMsg = getResult('Stump',computerChoice)
 
-    alert(`You have chosen Stump. Computer Choice is ${computerChoice} and ${resultMsg} `);
+    showResult('Stump',computerChoice , resultMsg)
 
     ">Stump</button>
 
